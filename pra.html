@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pra</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Radio buttons to switch between the interfaces -->
+    <input type="radio" name="toggle" id="ab" checked />
+    <input type="radio" name="toggle" id="re" />
+    <input type="radio" name="toggle" id="wo" />
+    <input type="radio" name="toggle" id="co" />
+
+    <div class="main">
+      <div class="loader">
+        <div class="loading loading1"></div>
+        <div class="loading loading2"></div>
+      </div>
+      <div class="content container">
+        <div class="content_bg">
+          <ul class="bubble">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="content_con center">
+          <header>
+            <ul>
+              <li class="about active">
+                <label for="ab">
+                  <a class="buttonLabelAb border-top">
+                    <!-- Use Font Awesome 6 icon classes -->
+                    <i class="icon fa fa-user"></i>
+                    <span class="link">ABOUT</span>
+                  </a></label
+                >
+              </li>
+              <li class="resume">
+                <label for="re">
+                  <a class="buttonLabelRe border-top">
+                    <i class="icon fa fa-list-alt"></i>
+                    <span class="link">RESUME</span>
+                  </a></label
+                >
+              </li>
+              <li class="works">
+                <label for="wo">
+                  <a class="buttonLabelWo border-top">
+                    <i class="icon fa fa-object-ungroup"></i>
+                    <span class="link">WORKS</span>
+                  </a></label
+                >
+              </li>
+              <li class="contact">
+                <label for="co">
+                  <a class="buttonLabelCo border-top">
+                    <i class="icon fa fa-envelope"></i>
+                    <span class="link">CONTACT</span>
+                  </a></label
+                >
+              </li>
+            </ul>
+          </header>
+
+          <div class="card">
+            <div class="profile">
+              <div class="slide"></div>
+              <div class="title">John Stamatov</div>
+              <div class="subtitle">Blockchain Developer</div>
+              <div class="social">
+                <a href="#" target="_blank">
+                  <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa fa-envelope"></i>
+                </a>
+              </div>
+              <hr />
+              <div class="links">
+                <a href="#contacts" class="link">
+                  <span class="text">CONTACT ME</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="about" class="old-one">
+            <div class="card-inner active scroll-thin">
+              <div class="title"><span class="firstword">About </span>Me</div>
+              <p>
+                Hi, I’m John, a web3 developer, from Bulgaria. I have rich
+                experience in developing decentralized apps in the Ethereum &
+                Binance & Polygon ecosystem. I am a fast learner and
+                collaborative team player who enjoys sharing my knowledge with
+                others. I’m also quietly confident, naturally creative, and
+                perpetually working on improving my skills.
+                <br />
+                <br />
+                Got a project idea in mind? Feel free to contact me and let's
+                make it a reality by working together!
+              </p>
+              <div class="title">
+                <span class="firstword">My </span>Services
+              </div>
+              <div class="table">
+                <div class="row">
+                  <div class="col">
+                    <div class="service-icon">
+                      <i class="fa fa-code"></i>
+                    </div>
+                    <div class="service-name">Full-stack Web3 Development</div>
+                    <div class="service-fe">-Frontend</div>
+                    <p>
+                      I believe a user-friendly user interface plays a critical
+                      role in onboarding web2 users to web3 apps. For the last 3
+                      years, I’ve been on the cutting edge of modern frontend
+                      dev toolset accumulating invaluable experience at
+                      NFTmall.io. Our tech stack includes React 18, Nextjs 13,
+                      Typescript, Nx, SWR, CloudFlare, GraphQL.
+                    </p>
+                    <div class="service-fe">-Backend</div>
+                    <p>
+                      Developing backend for web3 apps is significantly more
+                      complicated and requires fundamental shift from
+                      traditional web2 backend. Such as building scalable micro
+                      service architecture for indexing events from smart
+                      contracts, integrating 3rd party services, maintaining
+                      private blockchain nodes, etc.
+                    </p>
+                  </div>
+                  <div class="col" style="height: 274px">
+                    <div class="service-icon">
+                      <i class="fa fa-code"></i>
+                    </div>
+                    <div class="service-name">Smart Contract Development</div>
+                    <p>
+                      I specialize in developing secure and fail-proof smart
+                      contracts that meet the mission-critical requirements of
+                      your application. My code has passed audits by renowned
+                      security firms like <span>CertiK</span>.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="service-icon">
+                      <i class="fa fa-pencil"></i>
+                    </div>
+                    <div class="service-name">Cloud Solutions Design</div>
+                    <p>
+                      I can design a scalable infrastructure on AWS cloud that
+                      can horizontally & vertically scale to fulfill your app’s
+                      demand while minimizing cost.
+                    </p>
+                  </div>
+                  <div class="col">
+                    <div class="service-icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="service-name">Cloud Solutions Design</div>
+                    <p>
+                      No idea is too crazy for me. Whether you have a project
+                      idea or need an additional helping hand in your current
+                      project, I’m here to discuss and make it reality."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="title prices">
+                <span class="firstword">P</span>ricing
+              </div>
+              <div class="table">
+                <div class="row">
+                  <div class="col pricing-item">
+                    <div class="pricing-icon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="pricing-name">Hourly Basis</div>
+                    <div class="amount">
+                      <span class="dollar">$</span>
+                      <span class="number">55</span>
+                      <span class="period">/hour</span>
+                    </div>
+                    <p class="p-p">Ideal for long-term projects</p>
+                    <p class="p-p">Part/full-time commitment</p>
+                    <p class="p-p">Always available</p>
+                    <p class="p-p disabled">
+                      Free consultation <span>new</span>
+                    </p>
+                    <div class="col-links">
+                      <a href="#contacts" class="">
+                        <span class="text">Buy Hour</span>
+                        <i class="fa fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col pricing-item">
+                    <div class="pricing-icon">
+                      <i class="fa fa-trophy"></i>
+                    </div>
+                    <div class="pricing-name">Project Basis</div>
+                    <div class="amount">
+                      <span class="dollar">$</span>
+                      <span class="number">5k+</span>
+                      <span class="period">/hour</span>
+                    </div>
+                    <p class="p-p">Ideal for short or fixed-term projects</p>
+                    <p class="p-p">Full-time commitment</p>
+                    <p class="p-p">Subject to availability</p>
+                    <p class="p-p">Free consultation <span>new</span></p>
+                    <div class="col-links">
+                      <a href="#contacts" class="">
+                        <span class="text">Buy Hour</span>
+                        <i class="fa fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="title"><span class="firstword">C</span>lients</div>
+
+              <div class="row-clients">
+                <div class="col-client-item no-before">
+                  <a href="#" class="img"
+                    ><img src="./img/clients/client_1.png" alt=""
+                  /></a>
+                  <br />
+                  <a href="#" class="img-label">NFTmall</a>
+                </div>
+                <div class="col-client-item">
+                  <a href="#" class="img"
+                    ><img src="./img/clients/client_2.png" alt=""
+                  /></a>
+                  <a href="#" class="img-label">ThunderCore</a>
+                </div>
+
+                <div class="col-client-item">
+                  <a href="#" class="img"
+                    ><img src="./img/clients/client_3.png" alt=""
+                  /></a>
+                  <br />
+                  <a href="#" class="img-label">ARPC</a>
+                </div>
+                <div class="col-client-item">
+                  <a href="#" class="img"
+                    ><img src="./img/clients/client_4.png" alt=""
+                  /></a>
+                  <a href="#" class="img-label">Avalaunch</a>
+                </div>
+              </div>
+              <div class="title"><span class="firstword">F</span>un Fact</div>
+              <div class="row-clients p-b">
+                <div class="col-client-item no-before">
+                  <div class="fact-item">
+                    <div class="icon">
+                      <span class="fa fa-trophy"></span>
+                      <div class="fact-name">
+                        3-time software hackathon winner
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-client-item">
+                  <div class="fact-item">
+                    <div class="icon">
+                      <span class="fa fa-coffee"></span>
+                      <div class="fact-name">coffee lover</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-client-item">
+                  <div class="fact-item">
+                    <div class="icon">
+                      <span class="fa fa-soccer-ball-o"></span>
+                      <div class="fact-name">
+                        football fanatic (wing forward)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-client-item">
+                  <div class="fact-item">
+                    <div class="icon">
+                      <span class="fa fa-music"></span>
+                      <div class="fact-name">pianist (above average skill)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="resume" class="old-one">
+            <div class="card-inner scroll-thin">
+              <div class="title"><span class="firstword">R</span>esume</div>
+              <div class="row">
+                <div class="col no-after">
+                  <div class="resume-col-title">
+                    <span class="icon">
+                      <i class="fa fa-briefcase"></i>
+                    </span>
+                    <span class="name">Experience</span>
+                  </div>
+                  <div class="resume-items">
+                    <div class="resume-item">
+                      <div class="date active">2020 - Present</div>
+                      <div class="name">Lead Developer</div>
+                      <div class="company">NFTmall.</div>
+                      <p>
+                        As Lead Developer, my main responsibilities consisted of
+                        leading and overlooking the team that built an
+                        all-in-one NFT marketplace & launchpad that first
+                        launched on ThunderCore as well as Ethereum, BNB Chain,
+                        and Polygon.
+                        <br />
+                        <br />
+                        Worked hands-on on the initial bootstrapping of NFTmall
+                        protocol:
+                      </p>
+                      <ul>
+                        <li>
+                          - Development & deployment of core protocol smart
+                          contracts written in Solidity
+                        </li>
+                        <li>
+                          - Researching and building a backend indexer that
+                          indexes & monitors all NFTs and collections on BSC,
+                          Ethereum, Polygon, and Thundercore.
+                        </li>
+                        <li>
+                          - As a leading frontend engineer at that phase, built
+                          user-facing interface from bottom to top.
+                        </li>
+                      </ul>
+                      <p>
+                        After establishing the protocol on the market, I was
+                        responsible for:
+                      </p>
+                      <ul>
+                        <li>
+                          - Leading and mentoring blockchain team consisting of
+                          Smart Contract, Backend and Frontend developers
+                        </li>
+                        <li>
+                          - Communication with external partners on technical
+                          integrations (e.g. new partner blockchains like
+                          ThunderCore, Evmos, wallet apps and prominent DeFi
+                          protocols)
+                        </li>
+                        <li>
+                          - Exposing marketplace API for 3rd party projects to
+                          speed up their dev process.
+                        </li>
+                        <li>
+                          - Technical infrastructure management: ensuring secure
+                          and stable uptime
+                        </li>
+                        <li>
+                          - Interviewing and expansion of the Engineering team
+                        </li>
+                        <li>
+                          - Led team to participate in various software
+                          hackathons and won 3 times!
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="resume-item no-after">
+                      <div class="date">2018 - 2019</div>
+                      <div class="name">
+                        Blockchain & Smart Contract Developer
+                      </div>
+                      <div class="company">Upwork.</div>
+                      <p>
+                        I've worked on tens of small and big projects and I
+                        gained a wide range of skills and a truly unique blend
+                        of experience across the software industry. This period
+                        has become a golden opportunity to horn my programming
+                        skills from real-life projects. I've found my true
+                        passion in decentralized web3 technologies like
+                        blockchain, smart contracts, and NFTs and I decided to
+                        dedicate my 100% to this mission to decentralize the
+                        internet.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col no-after">
+                  <div class="resume-col-title">
+                    <span class="icon">
+                      <i class="fa fa-university"></i>
+                    </span>
+                    <span class="name">Education</span>
+                  </div>
+                  <div class="resume-items">
+                    <div class="resume-item">
+                      <div class="date">2013 - 2017</div>
+                      <div class="name">Technical University of Sofia</div>
+                      <div class="company">Sofia, Bulgaria</div>
+                      <p>
+                        Bachelor's degree in Computer Science and Engineering
+                      </p>
+                    </div>
+
+                    <div class="resume-item">
+                      <div class="name">Full-stack Programming Course</div>
+                      <div class="company">Online</div>
+                      <p>
+                        Git, Javascript, Typescript, HTML5, CSS3, React, NextJS,
+                        NodeJS, PHP, Flutter, Python, Docker, etc
+                      </p>
+                    </div>
+
+                    <div class="resume-item">
+                      <div class="name">AWS Certified Developer Course</div>
+                      <div class="company">Online</div>
+                      <p>
+                        AWS EC2, Lambda, ECS; DynamoDB, RDS, Aurora, Elastic
+                        Cache; IAM, CloudTrail, CloudWatch; CloudFormation,
+                        CodeDeploy; SNS, SQS, SES, EventBridge, Kafka; S3,
+                        CloudFront;
+                      </p>
+                    </div>
+
+                    <div class="resume-item">
+                      <div class="name">Blockchain & Web3 Course</div>
+                      <div class="company">Online</div>
+                      <p><i>"Blockchain A-Z" </i>by Hadelin de Ponteves</p>
+                      <p><i>"Ethereum and Solidity" </i>by Stephen Grider</p>
+                      <p>
+                        <i
+                          >"Ethereum Blockchain Developer Bootcamp with
+                          Solidity" </i
+                        >by Ravinder Deol
+                      </p>
+                    </div>
+
+                    <div class="resume-item">
+                      <div class="name">
+                        Leadership & Project Management courses
+                      </div>
+                      <div class="company">Online</div>
+                      <p>
+                        <i>"The Science of Leadership" </i>by Gregory Caremans
+                      </p>
+                      <p>
+                        <i
+                          >"Agile Crash Course: Agile Project Management; Agile
+                          Delivery" </i
+                        >by Mauricio Rubio
+                      </p>
+                      <p>
+                        <i>"Agile Fundamentals: Including Scrum and Kanban" </i
+                        >by BA Guide
+                      </p>
+                    </div>
+
+                    <div class="resume-item no-after">
+                      <div class="name">Ecommerce & Marketing courses</div>
+                      <div class="company">Online</div>
+                      <p><i>"Shopify Ecom Freedom" </i>by Dan Vas</p>
+                      <p>
+                        <i>"The Science of Leadership" </i>by Gregory Caremans
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="title"><span class="firstword">M</span>y Skills</div>
+              <div class="row">
+                <div class="col">
+                  <div class="skills-list">
+                    <div class="skill-title">
+                      <span class="icon">
+                        <i class="fa fa-paint-brush"></i>
+                      </span>
+                      <span class="name">Skills</span>
+                    </div>
+                    <ul>
+                      <li class="borderline-bottom">
+                        <div class="name">Frontend</div>
+                        <div class="progress">
+                          <div class="percentage" style="width: 95%"></div>
+                        </div>
+                      </li>
+                      <li class="borderline-bottom">
+                        <div class="name">Backend</div>
+                        <div class="progress">
+                          <div class="percentage" style="width: 75%"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="name">Smart Contract</div>
+                        <div class="progress">
+                          <div class="percentage" style="width: 90%"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="name">Dev Ops</div>
+                        <div class="progress">
+                          <div class="percentage" style="width: 75%"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="name">Cloud Solutions</div>
+                        <div class="progress">
+                          <div class="percentage" style="width: 85%"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="skills-list">
+                    <div class="skill-title">
+                      <span class="icon">
+                        <i class="fa fa-flag"></i>
+                      </span>
+                      <span class="name">Languages</span>
+                    </div>
+                    <ul>
+                      <li class="borderline-bottom">
+                        <div class="name">English</div>
+                        <div class="progress">
+                          <div class="percentage" style="width: 90%"></div>
+                        </div>
+                      </li>
+                      <li class="borderline-bottom">
+                        <div class="name">Bulgarian</div>
+                        <div class="progress">
+                          <div class="percentage" style="width: 100%"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="works" class="old-one">
+            <div class="card-inner scroll-thin">
+              <div class="title">
+                <span class="firstword">R</span>ecent Works
+              </div>
+              <div class="row grid-items">
+                <div class="col grid-item">
+                  <a href="#" class="image">
+                    <img src="./img/works/nftmall.png" alt="" />
+                  </a>
+                  <a href="#"> NFTmall </a>
+                  <div class="category">Website</div>
+                </div>
+                <div class="col grid-item">
+                  <a href="#" class="image">
+                    <img src="./img/works/gem.jpg" alt="" />
+                  </a>
+                  <a href="#" class="name"> NFTmall </a>
+                  <div class="category">Smart Contract</div>
+                </div>
+              </div>
+              <div class="row grid-items">
+                <div class="col grid-item">
+                  <a href="#" class="image">
+                    <img src="./img/works/filecoin.png" alt="" />
+                  </a>
+                  <a href="#"> Winner of Filecoin grant </a>
+                  <div class="category">Hackathon</div>
+                </div>
+                <div class="col grid-item">
+                  <a href="#" class="image">
+                    <img src="./img/works/avalanche_moralis.png" alt="" />
+                  </a>
+                  <a href="#" class="name">
+                    Winner of Avalanche + Moralis hackathon
+                  </a>
+                  <div class="category">Hackathon</div>
+                </div>
+              </div>
+              <div class="row grid-items">
+                <div class="col grid-item">
+                  <a href="#" class="image">
+                    <img src="./img/works/tron.jpg" alt="" />
+                  </a>
+                  <a href="#"> TRON Grand Hackathon Season 2 </a>
+                  <div class="category">Hackathon</div>
+                </div>
+                <div class="col grid-item">
+                  <a href="#" class="image">
+                    <img src="./img/works/tt_nftmall.jpg" alt="" />
+                  </a>
+                  <a href="#" class="name">
+                    Strategic Partner of ThunderCore blockchain
+                  </a>
+                  <div class="category">Partnership</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contacts" class="old-one">
+            <div class="card-inner scroll-thin">
+              <div class="title">
+                <span class="firstword">G</span>et in Touch
+              </div>
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94091.34669750341!2d27.45196585!3d42.52652195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a69266f9fc9d91%3A0x400a01269bf4df0!2sBurgas%2C%20Bulgaria!5e0!3m2!1sen!2s!4v1670627954503!5m2!1sen!2s"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  style="border: 0px; width: 100%; height: 100%"
+                ></iframe>
+              </div>
+              <div class="info-list">
+                <ul>
+                  <li><strong>Address . . . . .</strong> Burgas, Bulgaria</li>
+                  <li><strong>Email . . . . .</strong> john@nftmall.io</li>
+                  <li><strong>Phone . . . . .</strong> +35956916862</li>
+                  <li><strong>Freelance . . . . .</strong> Available</li>
+                </ul>
+              </div>
+              <div class="title">
+                <span class="firstword">C</span>ontact Form
+              </div>
+              <div class="contact-form">
+                <form>
+                  <input
+                    class="inputForm"
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                  />
+                  <input
+                    class="inputForm"
+                    type="text"
+                    style="float: right"
+                    name="email"
+                    placeholder="Email Address"
+                  />
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                  ></textarea>
+                  <div class="align-left">
+                    <a href="" class="button">
+                      <span class="text">Send Message</span>
+                      <span class="arrow"></span>
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
